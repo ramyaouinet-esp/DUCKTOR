@@ -26,6 +26,7 @@ Speak into the chatbot, and it will transcribe your speech. You can then downloa
 
 - **Pre-trained Models (Hosted on Hugging Face):**
 📸: https://huggingface.co/youngp5/skin-conditions
+
 🎙️: https://huggingface.co/fractalego/personal-speech-to-text-model
 - **Datasets Used:**
   https://huggingface.co/datasets/medalpaca/medical_meadow_wikidoc_patient_information
