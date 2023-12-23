@@ -1,0 +1,227 @@
+.navMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 80px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+ 
+  
+  .navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: #743afd;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navMenu a:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateX(20px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(110px);
+    transform: translateX(110px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(285px);
+    transform: translateX(285px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 100px 100px; /* Adjust padding for a larger size */
+    margin: 10px;
+    text-decoration: none;
+   
+    border-radius: 10px; /* Adjust border-radius for a rounded appearance */
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #003eaa;
+    color: #fff;
+}
+
+/* Description Styles */
+.is-revealing {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Container for Buttons */
+.hero-inner {
+    display: flex;
+    justify-content: center; /* Center-align the buttons horizontally */
+    align-items: center; /* Center-align the buttons vertically */
+    flex-direction: row; /* Ensure horizontal alignment */
+}
+
+
+.chat-container {
+    max-width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #297fb8;
+}
+
+.chat-body {
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.user-message {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    float: right;
+}
+
+.bot-message {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 10px;
+    float: left;
+}
+
+
+#userInput,
+#sendBtn,
+#imageInput {
+    margin: 5px;
+}
+.input-container {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#userInput {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#sendBtn {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add this to your existing CSS styles */
+
+
+.image-input-container {
+    position: relative;
+}
+
+#imageButton{
+  padding: 8px 15px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#imageInput:hover::before {
+    background-color: #297fb8;
+}
+
+#imageInput:active::before {
+    background-color: #25577a;
+}
+#sendBtn,
+#sendVoiceBtn,
+#recordBtn,
+#stopRecordBtn {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sendVoiceBtn,
+#stopRecordBtn {
+    margin-left: 5em;
+}
+#recordBtn{
+    margin-left: 1em;
+}
+#recordBtn[disabled],
+#stopRecordBtn[disabled],
+#sendVoiceBtn[disabled] {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+#audioPreview {
+    width: 100%;
+    margin-top: 10px;
+}
